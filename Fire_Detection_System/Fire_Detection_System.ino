@@ -104,7 +104,7 @@ void loop() {
   display.display();
 
   // In flame sensor if the value is low then fire is detected if not then it remains high
-  if (flameStatus == LOW) {
+  if ( gasValue >1000 ||flameStatus == LOW) {
     digitalWrite(BUZZERPIN, HIGH);  // Turn on buzzer
     if (!buzzerIsOn) {
       buzzerIsOn = true;
