@@ -1,7 +1,7 @@
 # Fire Detection System & Storing Sensor Data on Thinkspeak 
 
 
-### Here by Using NodeMCUESP8266 & DHT11 Tempearature & Humidity based Sensor,MQT12 Gas Sensor,Flame IR sensor,Buzzer &  Cloud Service Like ThinkSpeak we can Read the Tempearture,Humidity,Gas Conectrataion & Flame Collected by the Sensors & show it in the ThinkSpeak Console.
+### Here by Using NodeMCUESP8266 & DHT11 Tempearature & Humidity based Sensor,MQT12 Gas Sensor,Flame IR sensor,Buzzer &  Cloud Service Like ThinkSpeak we can Read the Tempearture,Humidity,Gas Conectrataion & Flame Collected by the Sensors & show it in the ThinkSpeak Console & an Web Dashboard Using NextJS.
 
 ## Working Circuit :
 
@@ -21,12 +21,29 @@
 
 <img  src='./img/thinkspeakcloud.jpg'>
 
+## Web Dashboard:-
+
+<img src="./img/webdashboard.png">
+<B> Created an Web dashboard using Nextjs to showcase the data in realtime from Web,the data is being fetched from the Thinkspeak Server using READAPI of the Thinkspeak 
+
 ## Explantation:-
 
 ### As we can see that there are total 5 filed with 19 entries in total & 3 of them are when the flame is detected,so when we see the data collected when the flame is on or off we observe that there is a differnece in the reading such for instance we observe that temperature (Field 1) is increasing when the flame is on & remains low or normal when not dtectyed then when we observe that humidty (Field 2) is decreasing because as the moisture of the air around the flame is decreasing due to the heat of the flame the buzzer is going on the gas concentration (Field 3) is decreasing as the wax burning  from the flame does not warrant an gas concentrataion(like methyl & propane or other kind of flammable gas) instead  it reduces the oxygen & nitrogen  conecntrtation around the flame, similarly we see that in flame status that when detected it remains low otherwise it remain high. We trigger the Alarm only when the flame is detected or the Gas Concentrtaion is above 1000 people may change their trigger opertation as they see fit. On the OLED Screen we are displaying the weather the Fire is on or off the Temp in Celsuis, Humidity & Gas Concentrtation.
 
 ## Working Video:-
 https://www.youtube.com/shorts/Jp69f5ARkDY
+
+
+## Running the Application
+
+To run the Next.js application, follow these steps:
+
+1. Navigate to the  directory:
+   ```sh
+   cd web
+   cd my-thinkspeak-dashboard
+   npm run dev
+
 
 ## Components Required :
 
@@ -42,5 +59,6 @@ https://www.youtube.com/shorts/Jp69f5ARkDY
 <li>Button(to turn on or off the system)</li>
 <li>Candle for Tesing(aslo lighter will work)</li>
 <li>Screwdriver (For adjusting the flame ir sensor senstivity it differs from another to another, clockwise for senstivity increase & anti-clockwise for  senstivity decrease)</li>
+<li>Node Installed for Working in the NextJS Applictation</li>
 <li> USB Cabel </li>
 </ul>
