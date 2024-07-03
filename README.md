@@ -1,4 +1,4 @@
-# Fire Detection System & Storing Sensor Data on Thinkspeak & Showing in NextJS Dashboard
+# Fire Detection System & Storing Sensor Data on Thinkspeak & Showing in NextJS & Flutter Dashboard
 
 
 ### Here by Using NodeMCUESP8266 & DHT11 Tempearature & Humidity based Sensor,MQT12 Gas Sensor,Flame IR sensor,Buzzer &  Cloud Service Like ThinkSpeak we can Read the Tempearture,Humidity,Gas Conectrataion & Flame Collected by the Sensors & show it in the ThinkSpeak Console & an Web Dashboard Using NextJS.
