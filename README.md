@@ -24,17 +24,24 @@
 ## Web Dashboard:-
 
 <img src="./img/webdashboard.png">
-<B> Created an Web dashboard using Nextjs to showcase the data in realtime from Web,the data is being fetched from the Thinkspeak Server using READAPI of the Thinkspeak 
+<B> Created an Web dashboard using Nextjs to showcase the data in realtime from Thinkspeak,the data is being fetched from the Thinkspeak Server using READAPI of the Thinkspeak 
+
+## App Dashboard:-
+
+<img src="./img/appflutter.png">
+<B> Created an App dashboard using Flutter  to showcase the data in realtime from Thinkspeak,the data is being fetched from the Thinkspeak Server using READAPI of the Thinkspeak 
+
 
 ## Explantation:-
 
-### As we can see that there are total 5 filed with 19 entries in total & 3 of them are when the flame is detected,so when we see the data collected when the flame is on or off we observe that there is a differnece in the reading such for instance we observe that temperature (Field 1) is increasing when the flame is on & remains low or normal when not dtectyed then when we observe that humidty (Field 2) is decreasing because as the moisture of the air around the flame is decreasing due to the heat of the flame the buzzer is going on the gas concentration (Field 3) is decreasing as the wax burning  from the flame does not warrant an gas concentrataion(like methyl & propane or other kind of flammable gas) instead  it reduces the oxygen & nitrogen  conecntrtation around the flame, similarly we see that in flame status that when detected it remains low otherwise it remain high. We trigger the Alarm only when the flame is detected or the Gas Concentrtaion is above 1000 people may change their trigger opertation as they see fit. On the OLED Screen we are displaying the weather the Fire is on or off the Temp in Celsuis, Humidity & Gas Concentrtation.
+### As we can see that there are total 5 filed with 19 entries in total & 3 of them are when the flame is detected,so when we see the data collected when the flame is on or off we observe that there is a differnece in the reading such for instance we observe that temperature (Field 1) is increasing when the flame is on & remains low or normal when not dtectyed then when we observe that humidty (Field 2) is decreasing because as the moisture of the air around the flame is decreasing due to the heat of the flame the buzzer is going on the gas concentration (Field 3) is decreasing as the wax burning  
+from the flame does not warrant an gas concentrataion(like methyl & propane or other kind of flammable gas) instead  it reduces the oxygen & nitrogen  conecntrtation around the flame, similarly we see that in flame status that when detected it remains low otherwise it remain high. We trigger the Alarm only when the flame is detected or the Gas Concentrtaion is above 1000 people may change their trigger opertation as they see fit. On the OLED Screen we are displaying the weather the Fire is on or off the Temp in Celsuis, Humidity & Gas Concentrtation.
 
 ## Working Video:-
 https://www.youtube.com/shorts/Jp69f5ARkDY
 
 
-## Running the Application
+## Running the Application on Web 
 
 To run the Next.js application, follow these steps:
 
@@ -43,6 +50,16 @@ To run the Next.js application, follow these steps:
    cd web
    cd my-thinkspeak-dashboard
    npm run dev
+
+## Running the Application on Flutter 
+
+To run the Flutter application, follow these steps:
+
+1. Navigate to the  directory:
+   ```sh
+   cd App
+   cd appfire
+   flutter run
 
 
 ## Components Required :
@@ -60,5 +77,6 @@ To run the Next.js application, follow these steps:
 <li>Candle for Tesing(aslo lighter will work)</li>
 <li>Screwdriver (For adjusting the flame ir sensor senstivity it differs from another to another, clockwise for senstivity increase & anti-clockwise for  senstivity decrease)</li>
 <li>Node Installed for Working in the NextJS Applictation</li>
+<li>Flutter & Android Studio </li>
 <li> USB Cabel </li>
 </ul>
