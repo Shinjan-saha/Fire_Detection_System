@@ -51,6 +51,12 @@ To run the Next.js application, follow these steps:
    cd my-thinkspeak-dashboard
    npm run dev
 
+2. Can  Run on Docker also
+```bash
+docker pull shinjan02/fire:dev
+```
+
+
 ## Running the Application on Flutter 
 
 To run the Flutter application, follow these steps:
